@@ -9,101 +9,125 @@
 <body>
   <header class="page-header">
     <a class="logo" href="#">
-      <img src="https://via.placeholder.com/150x100" alt="Логотип компании Техномарт" </a>
-      <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
-        <input type="search" name="search-field" placeholder="Поиск:">
-      </form>
-      <ul class="user-menu">
-        <li class="user-menu-item">
-          <a class="user-menu-link" href="#">Закладки: 0</a>
-        </li>
-        <li class="user-menu-item">
-          <a class="user-menu-link" href="#">Корзина: 0</a>
-        </li>
-        <li class="user-menu-item">
-          <a class="user-menu-link" href="#">Оформить заказ</a>
-        </li>
-      </ul>
+      <img src="https://via.placeholder.com/150x100" alt="Логотип компании Техномарт">
+    </a>
+    <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
+      <input type="search" name="search-field" placeholder="Поиск:">
+    </form>
+    <ul class="menu-list">
+      <li class="menu-item">
+        <a class="menu-link" href="#">Закладки: 0</a>
+      </li>
+      <li class="menu-item">
+        <a class="menu-link" href="#">Корзина: 0</a>
+      </li>
+      <li class="menu-item">
+        <a class="menu-link" href="#">Оформить заказ</a>
+      </li>
+    </ul>
 
-      <p>
-        Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта
-      </p>
+    <p class="store-description">
+      Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта
+    </p>
 
-      <address class="header-contacts">
-        <a class="header-contacts-address-phone" href="tel:+7 800 555-86-28">+7 800 555-86-28</a>
-        <p class="header-contacts-physical-address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
-      </address>
+    <address class="header-contacts">
+      <a class="header-contacts-address-phone" href="tel:+7 800 555-86-28">+7 800 555-86-28</a>
+      <p class="header-contacts-physical-address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
+    </address>
 
-      <ul class="user-block">
-        <li class="user-block-item">
-          <a class="user-block-link" href="#">Войти</a>
-        </li>
-        <li class="user-block-item">
-          <a class="user-block-link" href="#">Регистрация</a>
-        </li>
-        <li class="user-block-item">
-          <a class="user-block-link" href="#">Равшан Джамшутович</a>
-          <ul class="user-block-menu">
-            <li class="user-block-menu"></li>
-          </ul>
-        </li>
-      </ul>
-
-      <navigation class="navigation">
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Главная</a>
+    <ul class="user-block">
+      <li class="user-block-item">
+        <a class="user-block-link" href="#">Войти</a>
+      </li>
+      <li class="user-block-item">
+        <a class="user-block-link" href="#">Регистрация</a>
+      </li>
+      <li class="user-block-item">
+        <a class="user-block-link" href="#">Равшан Джамшутович</a>
+        <ul class="user-block-list user-menu">
+          <li class="user-menu-item">
+            <a class="user-menu-link" href="#">Мои заказы</a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Компания</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="/catalog.html">Каталог</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Новости</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Спецпредложения</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Доставка</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Контакты</a>
+          <li class="user-menu-item">
+            <a class="user-menu-link" href="#">Личный кабинет</a>
           </li>
         </ul>
-      </navigation>
+      </li>
+    </ul>
+
+    <navigation class="navigation">
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">Главная</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">Компания</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="/catalog.html">Каталог</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">Новости</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">Спецпредложения</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">Доставка</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">Контакты</a>
+        </li>
+      </ul>
+    </navigation>
   </header>
 
   <main class="main-index">
     <h1 class="visually-hidden">Техномарт</h1>
 
-    <section class="offerings">
+    <section class="offers">
       <h2 class="visually-hidden">Предложения</h2>
-      <ul class="offerings-list">
-        <li class="offerings-item offerings-item-new">
-          <h3 class="offerings-title">Материалы</h3>
-          <a class="advantage-button" href="#">на любой вкус</a>
+      <ul class="offers-list">
+        <li class="offers-item offers-item-new">
+          <h3 class="offers-title">Материалы</h3>
+          <a class="offers-button" href="#">на любой вкус</a>
         </li>
-        <li class="offerings-item">
-          <h3 class="offerings-title">Инструмент</h3>
-          <a class="advantage-button" href="#">на все случаи</a>
+        <li class="offers-item">
+          <h3 class="offers-title">Инструмент</h3>
+          <a class="offers-button" href="#">на все случаи</a>
         </li>
-        <li class="offerings-item">
-          <h3 class="offerings-title">Техника</h3>
-          <a class="advantage-button" href="#">для стройки</a>
+        <li class="offers-item">
+          <h3 class="offers-title">Техника</h3>
+          <a class="offers-button" href="#">для стройки</a>
         </li>
-        <li class="offerings-item">
-          <h3 class="offerings-title">Скидки 50%</h3>
-          <a class="advantage-button" href="#">на 350 товаров</a>
+        <li class="offers-item">
+          <h3 class="offers-title">Скидки 50%</h3>
+          <a class="offers-button" href="#">на 350 товаров</a>
         </li>
-        <li class="offerings-item">
-          <h3 class="offerings-title">Доставка</h3>
-          <a class="advantage-button" href="#">бесплатно</a>
+        <li class="offers-item">
+          <h3 class="offers-title">Доставка</h3>
+          <a class="offers-button" href="#">бесплатно</a>
         </li>
       </ul>
-      <section class="" </section>
+      <section class="slider">
+        <h3 class="slider-title">Перфораторы</h3>
+        <p class="slider-text">Настоящие мужские игрушки</p>
+        <img class="slider-image" src="https://via.placeholder.com/620x266" alt="Мужчина с инструментом">
+        <ul class="slider-pagination">
+          <li class="slider-pagination-item">
+            <button class="pagination-button slider-prev" type="button">
+              <span class="visually-hidden">Предыдущий слайд</span>
+            </button>
+          </li>
+          <li class="slider-pagination-item">
+            <button class="pagination-button slider-next" type="button">
+              <span class="visually-hidden">Следующий слайд</span>
+            </button>
+          </li>
+        </ul>
+        <a class="button slider-button" href="/catalog.html">Открыть каталог</a>
+      </section>
+    </section>
   </main>
 </body>
 
