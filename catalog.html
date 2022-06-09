@@ -8,7 +8,7 @@
 
 <body>
   <header class="page-header">
-    <a class="logo" href="#">
+    <a class="logo" href="/index.html">
       <img class="logo-image" src="https://via.placeholder.com/220x145" alt="Логотип компании Техномарт">
     </a>
     <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
@@ -52,13 +52,13 @@
     <navigation class="navigation">
       <ul class="navigation-list">
         <li class="navigation-item">
-          <a class="navigation-link" href="#">Главная</a>
+          <a class="navigation-link" href="/index.html">Главная</a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#">Компания</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="/catalog.html">Каталог</a>
+          <a class="navigation-link navigation-link-current" href="/catalog.html">Каталог</a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#">Новости</a>
@@ -75,6 +75,29 @@
       </ul>
     </navigation>
   </header>
+
+  <main class="main-inner">
+    <header class="inner-header">
+      <h1 class="visually-hidden">Каталог</h1>
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link breadcrumbs-index-link" href="/index.html">
+            <span class="visually-hidden">Главная</span>
+          </a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link">Каталог</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link">Инструмент</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link">Перфораторы</a>
+        </li>
+      </ul>
+    </header>
+
+  </main>
 </body>
 
 </html>
