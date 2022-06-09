@@ -58,7 +58,7 @@
           <a class="navigation-link" href="#">Компания</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link navigation-link-current" href="/catalog.html">Каталог</a>
+          <a class="navigation-link navigation-link-current" href="#">Каталог</a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#">Новости</a>
@@ -97,6 +97,74 @@
       </ul>
     </header>
 
+    <section class="catalog-products">
+      <h2 class="catalog-title">Перфораторы</h2>
+
+      <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+        <h3 class="catalog-filter-title">Фильтры: </h3>
+        <fieldset class="catalog-filter-group filter-group">
+          <legend class="filter-group-title">Производители:</legend>
+          <ul class="catalog-filter-list">
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="Bosch" checked>
+
+                Bosch
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="Interskol">
+
+                Интерскол
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="Makita" checked>
+
+                Makita
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="Dewalt">
+
+                Dewalt
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="Hitachi">
+
+                Hitachi
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="catalog-filter-group filter-group">
+          <legend class="filter-group-title">Питание:</legend>
+          <ul class="catalog-filter-list">
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="radio" name="power-type" value="Accumulator" checked>
+
+                Аккумуляторные
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="radio" name="power-type" value="AC-power">
+
+                Сетевые
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="show-button" type="submit">Показать</button>
+      </form>
+    </section>
   </main>
 </body>
 
