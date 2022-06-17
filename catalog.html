@@ -90,13 +90,13 @@
           </a>
         </li>
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link">Каталог</a>
+          <a class="breadcrumbs-link" href="#">Каталог</a>
         </li>
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link">Инструмент</a>
+          <a class="breadcrumbs-link" href="#">Инструмент</a>
         </li>
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link">Перфораторы</a>
+          <a class="breadcrumbs-link" href="#">Перфораторы</a>
         </li>
       </ul>
     </header>
@@ -106,6 +106,10 @@
 
       <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
         <h3 class="catalog-filter-title">Фильтр: </h3>
+        <fieldset class="catalog-filter-group filter-group">
+          <legend class="filter-group-title">Цена:</legend>
+        </fieldset>
+
         <fieldset class="catalog-filter-group filter-group">
           <legend class="filter-group-title">Производители:</legend>
           <ul class="catalog-filter-list">
@@ -173,7 +177,7 @@
         <h3 class="catalog-sort-title">Сортировка:</h3>
         <ul class="catalog-sort-list">
           <li class="catalog-sort-item">
-            <button class="catalog-sort-button" type="button">по цене</button>
+            <button class="catalog-sort-button catalog-sort-button-active" type="button">по цене</button>
           </li>
           <li class="catalog-sort-item">
             <button class="catalog-sort-button" type="button">по типу</button>
@@ -182,7 +186,8 @@
             <button class="catalog-sort-button" type="button">по функционалу</button>
           </li>
           <li class="catalog-sort-item">
-            <button class="sort-button" type="button"><span class="visually-hidden">По возрастанию</span></button>
+            <button class="sort-button sort-button-active" type="button"><span class="visually-hidden">По
+                возрастанию</span></button>
           </li>
           <li class="catalog-sort-item">
             <button class="sort-button" type="button"><span class="visually-hidden">По убыванию</span></button>

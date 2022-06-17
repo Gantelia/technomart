@@ -297,6 +297,7 @@ body {
 
 .product-card {
   text-align: center;
+  border: #EAEAEA solid 1px;
 }
 
 .old-price {
@@ -448,4 +449,129 @@ body {
 
 .page-footer .htmlacademy-link {
   color: #FFD180;
+}
+
+.main-inner {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs-link {
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.catalog-title {
+  background-color: #F1F5F7;
+  color: #32425C;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.catalog-filter-title,
+.catalog-sort-title {
+  background-color: #F7F3EC;
+  font-size: inherit;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.filter-group-title {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.control {
+  font-size: 15px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+.show-product-button {
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: #FFFFFF;
+  border: #E5E5E5 solid 1px;
+}
+
+.catalog-sort {
+  background-color: #F7F3EC;
+}
+
+.catalog-sort-list {
+  list-style: none;
+}
+
+.catalog-sort-button {
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: underline dotted #EE3643;
+  text-transform: uppercase;
+  border: none;
+  background-color: inherit;
+}
+
+.catalog-sort-button-active {
+  color: #EE3643;
+  text-decoration: none;
+}
+
+.sort-button {
+  background-image: url("../images/icons/triangle-grey-2.svg");
+  background-repeat: no-repeat;
+  border: none;
+  background-color: inherit;
+}
+
+.sort-button-active {
+  background-image: url("../images/icons/triangle-red-1.svg");
+  background-repeat: no-repeat;
+}
+
+.product-list,
+.product-card-menu {
+  list-style: none;
+}
+
+.product-button {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+}
+
+.purchase-button {
+  background-color: #63A63E;
+  color: #FFFFFF;
+  border: none;
+}
+
+.add-bookmark-button {
+  background-color: #FFFFFF;
+  border: #63A63E solid 3px;
+  color: #32425C;
+}
+
+.pagination {
+  list-style: none;
+}
+
+.pagination-link {
+  color: #000000;
+  background-color: #FFFFFF;
+  border: #E5E5E5 solid 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.pagination-current {
+  color: #FFFFFF;
+  background-color: #EE3643;
 }
