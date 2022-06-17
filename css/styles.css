@@ -77,13 +77,16 @@ body {
 }
 
 .logo {
-  width: 220px;
-  height: 42px;
   background-color: #EE3643;
   background-size: 100% auto;
   border-bottom: #b52933 solid 5px;
   display: block;
   text-align: center;
+}
+
+.header-logo {
+  width: 220px;
+  height: 42px;
 }
 
 .search {
@@ -247,6 +250,8 @@ body {
 .button {
   background-color: #EE3643;
   height: 38px;
+  border: none;
+  text-decoration: none;
 }
 
 .slider-button {
@@ -254,6 +259,7 @@ body {
   height: 40px;
   background-image: url("../images/icons/button-prev.svg");
   background-repeat: no-repeat;
+  border: none;
 }
 
 .popular-products {
@@ -347,4 +353,99 @@ body {
   font-size: 30px;
   line-height: 30px;
   color: #32425C;
+}
+
+.company-title,
+.contacts-title {
+  font-family: "Cuprum", sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.company-partner-list {
+  list-style-image: url("../images/list-style-dash.jpg");
+  font-family: "Cuprum", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.company-details-button,
+.contact-us-button {
+  font-family: "Cuprum", sans-serif;
+  font-size: 14px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+.page-footer {
+  font-family: "Cuprum", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  background-color: #32425C;
+}
+
+.footer-logo {
+  width: 220px;
+  height: 63px;
+}
+
+.page-footer a {
+  color: inherit;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.footer-contacts {
+  color: #F3F7F9;
+}
+
+.footer-contacts-physical-address {
+  font-style: normal;
+}
+
+.footer-navigation-list {
+  list-style: none;
+  color: #F1F5F7;
+}
+
+.footer-navigation-item:nth-child(n + 6) {
+  color: #FFD180;
+}
+
+.footer-copyright-social-container {
+  font-family: "Cuprum", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #FFFFFF;
+  background-color: #293449;
+}
+
+.footer-social-list {
+  list-style: none;
+}
+
+.footer-social-item {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #212A3A;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.footer-social-item:first-child {
+  background-image: url("../images/icons/vkontakte.svg");
+}
+
+.footer-social-item:nth-child(2) {
+  background-image: url("../images/icons/facebook.svg");
+}
+
+.footer-social-item:last-child {
+  background-image: url("../images/icons/instagram.svg");
+}
+
+.page-footer .htmlacademy-link {
+  color: #FFD180;
 }
