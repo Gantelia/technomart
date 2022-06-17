@@ -56,4 +56,295 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 13px;
   line-height: 24px;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.visually-hidden {
+  visibility: hidden;
+}
+
+.page-header {
+  background-color: #F1F5F7;
+  color: #FFFFFF;
+  font-family: "Cuprum", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.menu-container {
+  background-color: #293449;
+}
+
+.logo {
+  width: 220px;
+  height: 42px;
+  background-color: #EE3643;
+  background-size: 100% auto;
+  border-bottom: #b52933 solid 5px;
+  display: block;
+  text-align: center;
+}
+
+.search {
+  background-color: #293449;
+  outline: none;
+  border: none;
+}
+
+.search-icon {
+  background-image: url("../images/icons/search.svg");
+  background-repeat: no-repeat;
+}
+
+.search::placeholder {
+  color: #FFFFFF;
+}
+
+.menu-list {
+  list-style: none;
+}
+
+.page-header a {
+  text-decoration: none;
+}
+
+.menu-link {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.purchase-link {
+  background-color: #63A63E;
+}
+
+.company-description {
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+  text-align: left;
+  color: #EE3643;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.header-contacts-address-phone {
+  font-size: 21px;
+  line-height: 30px;
+  font-style: normal;
+  font-weight: 700;
+  color: #EE3643;
+  vertical-align: center;
+}
+
+.header-contacts-physical-address {
+  font-size: 14px;
+  font-style: normal;
+  vertical-align: middle;
+  color: #32425C;
+}
+
+.user-block {
+  list-style: none;
+}
+
+.user-block-link {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+  vertical-align: middle;
+}
+
+.navigation {
+  background-color: #32425C;
+}
+
+.navigation-list {
+  list-style: none;
+}
+
+.navigation-link {
+  color: #FFFFFF;
+}
+
+.main-index {
+  background-color: #7e6363;
+}
+
+.offers {
+  font-family: "Cuprum", sans-serif;
+  color: #FFFFFF;
+  text-align: left;
+}
+
+.offers-list {
+  list-style: none;
+}
+
+.offers a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.offers-item {
+  background-position: right;
+}
+
+.offers-item:first-child {
+  background-color: #FFBF47;
+  background-image: url("../images/icons/paint.svg");
+  background-repeat: no-repeat;
+}
+
+.offers-item:nth-child(2) {
+  background-color: #3BBCE3;
+  background-image: url("../images/icons/perforator.svg");
+  background-repeat: no-repeat;
+}
+
+.offers-item:nth-child(3) {
+  background-color: #DC91D8;
+  background-image: url("../images/icons/tractor.svg");
+  background-repeat: no-repeat;
+}
+
+.offers-item:nth-child(4) {
+  background-color: #8ED78F;
+  background-image: url("../images/icons/shopping-cart.svg");
+  background-repeat: no-repeat;
+}
+
+.offers-item:last-child {
+  background-color: #FFBF47;
+  background-image: url("../images/icons/car.svg");
+  background-repeat: no-repeat;
+}
+
+.offers-title {
+  font-size: 24px;
+  font-style: 700;
+  line-height: 30px;
+}
+
+.offers-button {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.slider-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.slider-text {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.button {
+  background-color: #EE3643;
+  height: 38px;
+}
+
+.slider-button {
+  width: 22px;
+  height: 40px;
+  background-image: url("../images/icons/button-prev.svg");
+  background-repeat: no-repeat;
+}
+
+.popular-products {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.popular-product-list,
+.popular-producers-list {
+  list-style: none;
+}
+
+.popular-products-container,
+.popular-producers-container {
+  font-family: "Cuprum", sans-serif;
+  font-weight: 400;
+  background-color: #F9F5F0;
+}
+
+.popular-products-title,
+.popular-producers-title {
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425C;
+}
+
+.all-products-button,
+.all-producers-button {
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+  border: none;
+}
+
+.product-card {
+  text-align: center;
+}
+
+.old-price {
+  color: #A9A9A9;
+}
+
+.new-price {
+  color: #FFFFFF;
+  border: none;
+}
+
+.producer-link {
+  background-color: #FFFFFF;
+  border: #EAEAEA solid 1px;
+}
+
+.services {
+  background-color: #F1F5F7;
+  color: #000000;
+}
+
+.services-title {
+  font-family: "Cuprum", sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.services-list {
+  list-style: none;
+}
+
+.services-button {
+  font-family: "Cuprum", sans-serif;
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: #32425C;
+  border: none;
+}
+
+.services-button-active {
+  color: #32425C;
+  background-color: #FFFFFF;
+}
+
+.services-slider {
+  background-image: url("../images/delivery-car.png");
+  background-repeat: no-repeat;
+}
+
+.services-slider-title {
+  font-family: "Cuprum", sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425C;
 }
