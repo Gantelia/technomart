@@ -52,12 +52,27 @@
   font-display: swap;
 }
 
+html {
+ height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: #000000;
   background-color: #FFFFFF;
+}
+
+.button {
+  background-color: #EE3643;
+  height: 38px;
+  border: none;
+  text-decoration: none;
 }
 
 .visually-hidden {
@@ -72,15 +87,21 @@ body {
   font-weight: 400;
 }
 
-.menu-container {
+.menu-wrapper {
   background-color: #293449;
+}
+
+.menu-container {
+  width: 940px;
+  margin: 0 auto;
+  display: flex;
 }
 
 .logo {
   background-color: #EE3643;
   background-size: 100% auto;
   border-bottom: #b52933 solid 5px;
-  display: block;
+  display: inline-block;
   text-align: center;
 }
 
@@ -106,6 +127,8 @@ body {
 
 .menu-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .page-header a {
@@ -121,6 +144,16 @@ body {
   background-color: #63A63E;
 }
 
+.header-wrapper-light {
+  background-color: #F1F5F7;
+}
+
+.header-container-light {
+  width: 940px;
+  display: flex;
+  margin: 0 auto;
+}
+
 .company-description {
   font-size: 16px;
   line-height: 23px;
@@ -129,6 +162,12 @@ body {
   color: #EE3643;
   text-align: left;
   vertical-align: middle;
+  width: 200px;
+  margin-right: 92px;
+}
+
+.header-contacts {
+  width: 270px;
 }
 
 .header-contacts-address-phone {
@@ -149,6 +188,15 @@ body {
 
 .user-block {
   list-style: none;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  display: flex;
+}
+
+.user-block-item {
+  padding: 12px 24px;
+  background-color: #FFFFFF;
 }
 
 .user-block-link {
@@ -170,28 +218,46 @@ body {
 
 .navigation {
   background-color: #32425C;
+  border-bottom: #293449 solid 5px;
 }
 
 .navigation-list {
   list-style: none;
+  width: 940px;
+  margin: 0 auto;
+  padding: 16px 53px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .navigation-link {
   color: #FFFFFF;
 }
 
+.main-container {
+  flex-grow: 1;
+}
+
 .main-index {
-  background-color: #7e6363;
+  background-color: #FFFFFF;
+}
+
+.main-container-white {
+  width: 940px;
+  margin: 0 auto;
 }
 
 .offers {
   font-family: "Cuprum", sans-serif;
   color: #FFFFFF;
   text-align: left;
+  display: flex;
 }
 
 .offers-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .offers a {
@@ -201,6 +267,8 @@ body {
 
 .offers-item {
   background-position: right;
+  width: 300px;
+  padding: 21px 22px;
 }
 
 .offers-item:first-child {
@@ -237,6 +305,8 @@ body {
   font-size: 24px;
   font-style: 700;
   line-height: 30px;
+  margin: 0;
+  padding: 0;
 }
 
 .offers-button {
@@ -244,6 +314,10 @@ body {
   line-height: 18px;
   text-transform: uppercase;
   background-color: rgba(255, 255, 255, 0.3);
+}
+
+.slider {
+  width: 620px;
 }
 
 .slider-title {
@@ -255,13 +329,6 @@ body {
 .slider-text {
   font-size: 18px;
   line-height: 24px;
-}
-
-.button {
-  background-color: #EE3643;
-  height: 38px;
-  border: none;
-  text-decoration: none;
 }
 
 .slider-button {
@@ -278,34 +345,42 @@ body {
   font-weight: 700;
 }
 
-.popular-product-list,
-.popular-producers-list {
+.product-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
-.popular-products-container,
-.popular-producers-container {
+.popular-products-container {
   font-family: "Cuprum", sans-serif;
   font-weight: 400;
   background-color: #F9F5F0;
+  padding: 30px 14px;
+  padding-left: 28px;
+  display: flex;
 }
 
-.popular-products-title,
-.popular-producers-title {
+.popular-products-title {
   font-size: 30px;
   line-height: 30px;
   color: #32425C;
+  margin: 0;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
-.all-products-button,
-.all-producers-button {
+.all-products-button {
   font-size: 14px;
   line-height: 18px;
   color: #FFFFFF;
   border: none;
+  margin-left: auto;
 }
 
 .product-card {
+  width: 220px;
   text-align: center;
   border: #EAEAEA solid 1px;
 }
@@ -319,14 +394,67 @@ body {
   border: none;
 }
 
+.popular-producers-container {
+  font-family: "Cuprum", sans-serif;
+  font-weight: 400;
+  background-color: #F9F5F0;
+  padding: 30px 14px;
+  padding-left: 28px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.popular-producers-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.all-producers-button {
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+  border: none;
+  margin-left: auto;
+}
+
+.popular-producers-title {
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425C;
+  margin: 0;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.producer-logo {
+  width: 220px;
+  min-height: 145px;
+  box-sizing: border-box;
+  border: #EAEAEA solid 1px;
+  text-align: center;
+}
+
 .producer-link {
   background-color: #FFFFFF;
-  border: #EAEAEA solid 1px;
 }
 
 .services {
   background-color: #F1F5F7;
   color: #000000;
+}
+
+.services-container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.main-container-white {
+  width: 940px;
+  margin: 0 auto;
 }
 
 .services-title {
@@ -337,6 +465,8 @@ body {
 
 .services-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .services-button {
@@ -347,6 +477,8 @@ body {
   color: #FFFFFF;
   background-color: #32425C;
   border: none;
+  width: 240px;
+  margin-right: 80px;
 }
 
 .services-button-active {
@@ -364,10 +496,21 @@ body {
   font-size: 30px;
   line-height: 30px;
   color: #32425C;
+  font-weight: 400;
 }
 
-.company-title,
-.contacts-title {
+.about-company-container {
+  width: 940px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.company {
+  width: 460px;
+}
+
+.company-title {
   font-family: "Cuprum", sans-serif;
   font-size: 30px;
   line-height: 30px;
@@ -381,8 +524,34 @@ body {
   line-height: 24px;
 }
 
-.company-details-button,
+.company-details-button {
+  display: block;
+  width: 220px;
+  font-family: "Cuprum", sans-serif;
+  font-size: 14px;
+  line-height: 28px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.contacts {
+  width: 300px;
+}
+
+.contacts-title {
+  font-family: "Cuprum", sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.contacts-map-button {
+  padding: 0;
+  border: none;
+}
+
 .contact-us-button {
+  width: 300px;
   font-family: "Cuprum", sans-serif;
   font-size: 14px;
   line-height: 28px;
@@ -394,6 +563,12 @@ body {
   font-size: 18px;
   line-height: 24px;
   background-color: #32425C;
+}
+
+.page-footer-container {
+  width: 940px;
+  margin: 0 auto;
+  display: flex;
 }
 
 .footer-logo {
@@ -413,18 +588,28 @@ body {
 
 .footer-contacts-physical-address {
   font-style: normal;
+  width: 333px;
 }
 
 .footer-navigation-list {
   list-style: none;
   color: #F1F5F7;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.footer-navigation-item {
+  margin-left: 58px;
 }
 
 .footer-navigation-item:nth-child(n + 6) {
   color: #FFD180;
 }
 
-.footer-copyright-social-container {
+.footer-copyright-social-wrapper {
   font-family: "Cuprum", sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -432,8 +617,21 @@ body {
   background-color: #293449;
 }
 
+.footer-copyright-social-container {
+  width: 940px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.copyright {
+  width: 333px;
+  margin-right: 53px;
+}
+
 .footer-social-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-social-item {
@@ -461,6 +659,16 @@ body {
   color: #FFD180;
 }
 
+.feedback {
+  width: 140px;
+  margin-left: auto;
+}
+
+.about-text {
+  width: 110px;
+  margin-left: auto;
+}
+
 .main-inner {
   font-size: 13px;
   line-height: 18px;
@@ -483,8 +691,7 @@ body {
   font-weight: 400;
 }
 
-.catalog-filter-title,
-.catalog-sort-title {
+.catalog-filter-title {
   background-color: #F7F3EC;
   font-size: inherit;
   font-weight: 400;
@@ -514,6 +721,13 @@ body {
 
 .catalog-sort {
   background-color: #F7F3EC;
+}
+
+.catalog-sort-title {
+  background-color: #F7F3EC;
+  font-size: inherit;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 .catalog-sort-list {
