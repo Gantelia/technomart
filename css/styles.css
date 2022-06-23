@@ -3,7 +3,7 @@
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/ptsans.woff2") format("woff2"),
-       url("../fonts/ptsans.woff") format("woff");
+    url("../fonts/ptsans.woff") format("woff");
   font-display: swap;
 }
 
@@ -12,7 +12,7 @@
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/ptsansbold.woff2") format("woff2"),
-       url("../fonts/ptsansbold.woff") format("woff");
+    url("../fonts/ptsansbold.woff") format("woff");
   font-display: swap;
 }
 
@@ -21,7 +21,7 @@
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/cuprum.woff2") format("woff2"),
-       url("../fonts/cuprum.woff") format("woff");
+    url("../fonts/cuprum.woff") format("woff");
   font-display: swap;
 }
 
@@ -30,7 +30,7 @@
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/cuprumbold.woff2") format("woff2"),
-       url("../fonts/cuprumbold.woff") format("woff");
+    url("../fonts/cuprumbold.woff") format("woff");
   font-display: swap;
 }
 
@@ -39,7 +39,7 @@
   font-style: italic;
   font-weight: 400;
   src: url("../fonts/cuprumitalic.woff2") format("woff2"),
-       url("../fonts/cuprumitalic.woff") format("woff");
+    url("../fonts/cuprumitalic.woff") format("woff");
   font-display: swap;
 }
 
@@ -48,12 +48,12 @@
   font-style: italic;
   font-weight: 700;
   src: url("../fonts/cuprumbolditalic.woff2") format("woff2"),
-       url("../fonts/cuprumbolditalic.woff") format("woff");
+    url("../fonts/cuprumbolditalic.woff") format("woff");
   font-display: swap;
 }
 
 html {
- height: 100%;
+  height: 100%;
 }
 
 body {
@@ -61,8 +61,10 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  min-width: 1200px;
   font-family: "PT Sans", sans-serif;
   font-size: 13px;
+  font-weight: 400;
   line-height: 24px;
   color: #000000;
   background-color: #FFFFFF;
@@ -75,9 +77,9 @@ body {
   text-decoration: none;
 }
 
-.visually-hidden {
+/* .visually-hidden {
   visibility: hidden;
-}
+} */
 
 .page-header {
   background-color: #F1F5F7;
@@ -126,7 +128,7 @@ body {
 }
 
 .menu-list {
-  list-style: none;
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
@@ -160,7 +162,6 @@ body {
   font-style: italic;
   text-align: left;
   color: #EE3643;
-  text-align: left;
   vertical-align: middle;
   width: 200px;
   margin-right: 92px;
@@ -187,7 +188,7 @@ body {
 }
 
 .user-block {
-  list-style: none;
+  list-style-type: none;
   margin: 0;
   margin-left: auto;
   padding: 0;
@@ -219,12 +220,12 @@ body {
 .navigation {
   background-color: #32425C;
   border-bottom: #293449 solid 5px;
+  width: 940px;
+  margin: 0 auto;
 }
 
 .navigation-list {
-  list-style: none;
-  width: 940px;
-  margin: 0 auto;
+  list-style-type: none;
   padding: 16px 53px;
   display: flex;
   justify-content: space-between;
@@ -255,7 +256,7 @@ body {
 }
 
 .offers-list {
-  list-style: none;
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
@@ -346,7 +347,7 @@ body {
 }
 
 .product-list {
-  list-style: none;
+  list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
@@ -360,6 +361,7 @@ body {
   padding: 30px 14px;
   padding-left: 28px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .popular-products-title {
@@ -405,7 +407,7 @@ body {
 }
 
 .popular-producers-list {
-  list-style: none;
+  list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
@@ -461,10 +463,12 @@ body {
   font-family: "Cuprum", sans-serif;
   font-size: 30px;
   line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 .services-list {
-  list-style: none;
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
@@ -497,6 +501,7 @@ body {
   line-height: 30px;
   color: #32425C;
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 .about-company-container {
@@ -515,10 +520,11 @@ body {
   font-size: 30px;
   line-height: 30px;
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 .company-partner-list {
-  list-style-image: url("../images/list-style-dash.jpg");
+  list-style-image: url("../images/list-style-type-dash.jpg");
   font-family: "Cuprum", sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -543,6 +549,7 @@ body {
   font-size: 30px;
   line-height: 30px;
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 .contacts-map-button {
@@ -589,10 +596,11 @@ body {
 .footer-contacts-physical-address {
   font-style: normal;
   width: 333px;
+  margin: 0;
 }
 
 .footer-navigation-list {
-  list-style: none;
+  list-style-type: none;
   color: #F1F5F7;
   margin: 0;
   padding: 0;
@@ -629,7 +637,7 @@ body {
 }
 
 .footer-social-list {
-  list-style: none;
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
@@ -675,7 +683,7 @@ body {
 }
 
 .breadcrumbs {
-  list-style: none;
+  list-style-type: none;
 }
 
 .breadcrumbs-link {
@@ -731,7 +739,7 @@ body {
 }
 
 .catalog-sort-list {
-  list-style: none;
+  list-style-type: none;
 }
 
 .catalog-sort-button {
@@ -761,7 +769,7 @@ body {
 
 .product-list,
 .product-card-menu {
-  list-style: none;
+  list-style-type: none;
 }
 
 .product-button {
@@ -784,7 +792,7 @@ body {
 }
 
 .pagination {
-  list-style: none;
+  list-style-type: none;
 }
 
 .pagination-link {
