@@ -86,6 +86,8 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   padding: 0;
+  cursor: pointer;
+  display: inline-block;
 }
 
 .visually-hidden {
@@ -129,6 +131,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
 .header-logo {
@@ -158,9 +161,6 @@ body {
 
 .search-label {
   padding-left: 25px;
-  background-image: url("../images/icons/icon-search.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
   width: 100%
 }
 
@@ -631,14 +631,31 @@ body {
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
-  background-color: #EE3643;
   color: #FFFFFF;
   border: none;
-  width: 141px;
+  width: 121px;
   margin-top: auto;
+  margin-left: -10px;
   padding: 10px 0;
-  border-top-left-radius: 2px;
-  border-bottom-left-radius: 2px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  background-color: #EE3643;
+  position: relative;
+  cursor: pointer;
+}
+
+.new-price-button::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 19px solid transparent;
+  border-bottom: 19px solid transparent;
+  border-left: 20px solid #EE3643;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateX(100%);
 }
 
 .producer-logo {
@@ -773,7 +790,6 @@ body {
 }
 
 .company-partner-list {
-  list-style-image: url("../images/list-style-type-dash.jpg");
   font-family: "Cuprum", sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -1148,6 +1164,7 @@ body {
   text-transform: uppercase;
   border: none;
   background-color: inherit;
+  cursor: pointer;
 }
 
 .catalog-sort-button-active {
@@ -1173,6 +1190,7 @@ body {
   background-color: inherit;
   width: 12px;
   height: 12px;
+  cursor: pointer;
 }
 
 .sort-button:last-child {
@@ -1236,6 +1254,8 @@ body {
   text-align: center;
   width: 135px;
   border-radius: 2px;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .purchase-button {
