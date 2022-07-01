@@ -21,15 +21,29 @@
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
             <label class="search-label">
               <span class="visually-hidden">Поиск</span>
+              <svg class="header-icon" width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M13.46 12.04 17 15.6 15.59 17l-3.55-3.54a7.5 7.5 0 1 1 1.41-1.41ZM7.5 2a5.5 5.5 0 1 0 .01 11.01A5.5 5.5 0 0 0 7.5 2Z" />
+              </svg>
               <input class="search" type="search" name="search-field" id="search-field" placeholder="Поиск:" />
             </label>
           </form>
           <ul class="menu-list">
             <li class="menu-item">
-              <a class="menu-link bookmarks-link" href="#">Закладки: 0</a>
+              <a class="menu-link bookmarks-link" href="#">
+                <svg class="header-icon" width="14" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M14 15c0 .55-.37.74-.82.43l-5.36-3.77a1.54 1.54 0 0 0-1.64 0L.82 15.43c-.45.31-.82.12-.82-.43V1a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v14Z" />
+                </svg>
+                Закладки: 0</a>
             </li>
             <li class="menu-item">
-              <a class="menu-link cart-link menu-link-filled" href="#">Корзина: 0</a>
+              <a class="menu-link cart-link menu-link-filled" href="#">
+                <svg class="header-icon" width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M4.5 15a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM12.5 15a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM15 2H4.07l-.42-2H0v2h2.03l1.99 9H15V9H9.44L15 6.95V2Z" />
+                </svg>
+                Корзина: 10</a>
             </li>
             <li class="menu-item">
               <a class="menu-link purchase-link" href="#">Оформить заказ</a>
@@ -222,11 +236,17 @@
                     <ul class="low-high-sort-list">
                       <li class="low-high-sort-item">
                         <button class="sort-button sort-button-active" type="button">
+                          <svg class="sort-icon" width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.5 0 11 10H0" />
+                          </svg>
                           <span class="visually-hidden">По возрастанию</span>
                         </button>
                       </li>
                       <li class="low-high-sort-item">
                         <button class="sort-button" type="button">
+                          <svg class="sort-icon" width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.5 10 0 0h11" />
+                          </svg>
                           <span class="visually-hidden">По убыванию</span>
                         </button>
                       </li>
@@ -362,7 +382,7 @@
     <footer class="page-footer">
       <div class="page-footer-container">
         <div class="footer-logo-address-container">
-          <a class="logo footer-logo" href="#">
+          <a class="logo footer-logo" href="/">
             <img class="logo-image" src="./images/icons/logo-large.svg" width="137" height="22"
               alt="Логотип компании Техномарт" />
           </a>
