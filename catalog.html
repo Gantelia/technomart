@@ -21,7 +21,8 @@
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
             <label class="search-label">
               <span class="visually-hidden">Поиск</span>
-              <svg class="header-icon" width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="header-icon" aria-hidden="true" focusable="false" width="17" height="17" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M13.46 12.04 17 15.6 15.59 17l-3.55-3.54a7.5 7.5 0 1 1 1.41-1.41ZM7.5 2a5.5 5.5 0 1 0 .01 11.01A5.5 5.5 0 0 0 7.5 2Z" />
               </svg>
@@ -31,15 +32,17 @@
           <ul class="menu-list">
             <li class="menu-item">
               <a class="menu-link bookmarks-link" href="#">
-                <svg class="header-icon" width="14" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="header-icon" aria-hidden="true" focusable="false" width="14" height="16" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M14 15c0 .55-.37.74-.82.43l-5.36-3.77a1.54 1.54 0 0 0-1.64 0L.82 15.43c-.45.31-.82.12-.82-.43V1a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v14Z" />
                 </svg>
                 Закладки: 0</a>
             </li>
             <li class="menu-item">
-              <a class="menu-link cart-link menu-link-filled" href="#">
-                <svg class="header-icon" width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <a class="menu-link cart-link menu-link-active" href="#">
+                <svg class="header-icon" aria-hidden="true" focusable="false" width="15" height="15" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M4.5 15a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM12.5 15a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM15 2H4.07l-.42-2H0v2h2.03l1.99 9H15V9H9.44L15 6.95V2Z" />
                 </svg>
@@ -66,21 +69,31 @@
             </p>
           </address>
 
-          <section class="catalog-user-block">
+          <section class="user-block">
             <h2 class="visually-hidden">Блок пользователя</h2>
-            <a class="user-block-link" href="#">
-              <svg class="header-icon user-icon" width=" 20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M17.88 14.67c-2.14-.74-4.25-1.67-5.2-2.4-.66-.5-.78-1.61-.52-2.4a5.49 5.49 0 0 0 1.86-4.29c0-2.8-1.8-5.08-4.02-5.08-2.22 0-4.02 2.28-4.02 5.08 0 1.8.75 3.38 1.86 4.28.26.8.14 1.92-.51 2.42-.95.72-3.07 1.65-5.21 2.39C-.03 15.4 0 18.5 0 18.5h20s.02-3.1-2.12-3.83Z" />
-              </svg>
-              Равшан Джамшутович
-              <svg class="header-icon logout-icon" width="20" height="18" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="M20 9 11.12.5v6h-6v5h6v6L20 9Z" />
-                <path
-                  d="M2.1 14.45V3.55c.02-.38.18-1.06 1.02-1.06h5.02V.5H3.12C.94.5.12 2.31.09 3.53v10.94C.1 15.7.94 17.5 3.12 17.5h5.02v-1.99H3.12c-.84 0-1-.68-1.01-1.06Z" />
-              </svg>
-            </a>
+            <ul class="user-option-list">
+              <li>
+                <a class="user-block-link user-profile-link" href="#">
+                  <svg class="header-icon user-icon" aria-hidden="true" focusable="false" width=" 20" height="19"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M17.88 14.67c-2.14-.74-4.25-1.67-5.2-2.4-.66-.5-.78-1.61-.52-2.4a5.49 5.49 0 0 0 1.86-4.29c0-2.8-1.8-5.08-4.02-5.08-2.22 0-4.02 2.28-4.02 5.08 0 1.8.75 3.38 1.86 4.28.26.8.14 1.92-.51 2.42-.95.72-3.07 1.65-5.21 2.39C-.03 15.4 0 18.5 0 18.5h20s.02-3.1-2.12-3.83Z" />
+                  </svg>
+                  Равшан Джамшутович
+                </a>
+              </li>
+              <li>
+                <a class="user-block-link user-logout-link" href="#">
+                  <span class="visually-hidden">Выйти</span>
+                  <svg class="header-icon logout-icon" aria-hidden="true" focusable="false" width="20" height="18"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 9 11.12.5v6h-6v5h6v6L20 9Z" />
+                    <path
+                      d="M2.1 14.45V3.55c.02-.38.18-1.06 1.02-1.06h5.02V.5H3.12C.94.5.12 2.31.09 3.53v10.94C.1 15.7.94 17.5 3.12 17.5h5.02v-1.99H3.12c-.84 0-1-.68-1.01-1.06Z" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
             <ul class="user-menu-list">
               <li class="user-menu-item">
                 <a class="user-menu-link" href="#">Мои заказы</a>
@@ -127,6 +140,12 @@
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link breadcrumbs-home-link" href="/index.html">
+                <svg class="breadcrumbs-icon" aria-hidden="true" focusable="false" width="14" height="12" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2 8v4h4V8h2v4h4V8L7 3.52 2 8Z" />
+                  <path
+                    d="M13.83 6.37 12 4.75V0h-2v2.99L7.33.63 7.27.6a.47.47 0 0 0-.08-.05.55.55 0 0 0-.1-.02L7 .5l-.1.02a.46.46 0 0 0-.09.02L6.73.6l-.06.04-6.5 5.73a.5.5 0 0 0 .66.75L7 1.67l6.17 5.44a.5.5 0 0 0 .66-.75Z" />
+                </svg>
                 <span class="visually-hidden">Главная</span>
               </a>
             </li>
@@ -236,7 +255,8 @@
                     <ul class="low-high-sort-list">
                       <li class="low-high-sort-item">
                         <button class="sort-button sort-button-active" type="button">
-                          <svg class="sort-icon" width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <svg class="sort-icon" aria-hidden="true" focusable="false" width="11" height="10" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
                             <path d="M5.5 0 11 10H0" />
                           </svg>
                           <span class="visually-hidden">По возрастанию</span>
@@ -244,7 +264,8 @@
                       </li>
                       <li class="low-high-sort-item">
                         <button class="sort-button" type="button">
-                          <svg class="sort-icon" width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <svg class="sort-icon" aria-hidden="true" focusable="false" width="11" height="10" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
                             <path d="M5.5 10 0 0h11" />
                           </svg>
                           <span class="visually-hidden">По убыванию</span>
@@ -257,6 +278,18 @@
 
               <ul class="catalog-product-list">
                 <li class="product-card">
+                  <ul class="product-card-menu card-menu">
+                    <li class="card-menu-item">
+                      <button class="product-button purchase-button" type="button">
+                        Купить
+                      </button>
+                    </li>
+                    <li class="card-menu-item">
+                      <button class="product-button add-bookmark-button" type="button">
+                        В закладки
+                      </button>
+                    </li>
+                  </ul>
                   <a class="product-card-link" href="#">
                     <img class="product-card-image" src="./images/products/perforator-3.jpg" width="144" height="128"
                       alt="Перфоратор BOSCH BFG 6000" />
@@ -266,6 +299,18 @@
                   <button class="new-price-button" type="button">25500 Р.</button>
                 </li>
                 <li class="product-card">
+                  <ul class="product-card-menu card-menu">
+                    <li class="card-menu-item">
+                      <button class="product-button purchase-button" type="button">
+                        Купить
+                      </button>
+                    </li>
+                    <li class="card-menu-item">
+                      <button class="product-button add-bookmark-button" type="button">
+                        В закладки
+                      </button>
+                    </li>
+                  </ul>
                   <a class="product-card-link" href="#">
                     <img class="product-card-image" src="./images/products/perforator-3.jpg" width="144" height="128"
                       alt="Перфоратор BOSCH BFG 6000" />
@@ -287,11 +332,27 @@
                       </button>
                     </li>
                   </ul>
+                  <a class="product-card-link" href="#">
+                    <img class="product-card-image" src="./images/products/perforator-3.jpg" width="144" height="128"
+                      alt="Перфоратор BOSCH BFG 6000" />
+                  </a>
                   <h3 class="product-card-title">Перфоратор BOSCH<br />BFG 6000</h3>
                   <del class="old-price">30500 Р.</del>
                   <button class="new-price-button" type="button">25500 Р.</button>
                 </li>
                 <li class="product-card product-card-new">
+                  <ul class="product-card-menu card-menu">
+                    <li class="card-menu-item">
+                      <button class="product-button purchase-button" type="button">
+                        Купить
+                      </button>
+                    </li>
+                    <li class="card-menu-item">
+                      <button class="product-button add-bookmark-button" type="button">
+                        В закладки
+                      </button>
+                    </li>
+                  </ul>
                   <a class="product-card-link" href="#">
                     <img class="product-card-image" src="./images/products/perforator-3.jpg" width="144" height="128"
                       alt="Перфоратор BOSCH BFG 3000" />
@@ -301,6 +362,18 @@
                   <button class="new-price-button" type="button">15500 Р.</button>
                 </li>
                 <li class="product-card">
+                  <ul class="product-card-menu card-menu">
+                    <li class="card-menu-item">
+                      <button class="product-button purchase-button" type="button">
+                        Купить
+                      </button>
+                    </li>
+                    <li class="card-menu-item">
+                      <button class="product-button add-bookmark-button" type="button">
+                        В закладки
+                      </button>
+                    </li>
+                  </ul>
                   <a class="product-card-link" href="#">
                     <img class="product-card-image" src="./images/products/perforator-2.jpg" width="127" height="112"
                       alt="Перфоратор BOSCH BFG 6000" />
@@ -310,6 +383,18 @@
                   <button class="new-price-button" type="button">25500 Р.</button>
                 </li>
                 <li class="product-card product-card-new">
+                  <ul class="product-card-menu card-menu">
+                    <li class="card-menu-item">
+                      <button class="product-button purchase-button" type="button">
+                        Купить
+                      </button>
+                    </li>
+                    <li class="card-menu-item">
+                      <button class="product-button add-bookmark-button" type="button">
+                        В закладки
+                      </button>
+                    </li>
+                  </ul>
                   <a class="product-card-link" href="#">
                     <img class="product-card-image" src="./images/products/perforator-3.jpg" width="144" height="128"
                       alt="Перфоратор BOSCH BFG 2000" />
@@ -318,6 +403,18 @@
                   <button class="new-price-button" type="button">12500 Р.</button>
                 </li>
                 <li class="product-card product-card-new">
+                  <ul class="product-card-menu card-menu">
+                    <li class="card-menu-item">
+                      <button class="product-button purchase-button" type="button">
+                        Купить
+                      </button>
+                    </li>
+                    <li class="card-menu-item">
+                      <button class="product-button add-bookmark-button" type="button">
+                        В закладки
+                      </button>
+                    </li>
+                  </ul>
                   <a class="product-card-link" href="#">
                     <img class="product-card-image" src="./images/products/perforator-3.jpg" width="144" height="128"
                       alt="Перфоратор BOSCH BFG 3000" />
@@ -327,6 +424,18 @@
                   <button class="new-price-button" type="button">15500 Р.</button>
                 </li>
                 <li class="product-card">
+                  <ul class="product-card-menu card-menu">
+                    <li class="card-menu-item">
+                      <button class="product-button purchase-button" type="button">
+                        Купить
+                      </button>
+                    </li>
+                    <li class="card-menu-item">
+                      <button class="product-button add-bookmark-button" type="button">
+                        В закладки
+                      </button>
+                    </li>
+                  </ul>
                   <a class="product-card-link" href="#">
                     <img class="product-card-image" src="./images/products/perforator-2.jpg" width="127" height="112"
                       alt="Перфоратор BOSCH BFG 6000" />
@@ -336,6 +445,18 @@
                   <button class="new-price-button" type="button">25500 Р.</button>
                 </li>
                 <li class="product-card product-card-new">
+                  <ul class="product-card-menu card-menu">
+                    <li class="card-menu-item">
+                      <button class="product-button purchase-button" type="button">
+                        Купить
+                      </button>
+                    </li>
+                    <li class="card-menu-item">
+                      <button class="product-button add-bookmark-button" type="button">
+                        В закладки
+                      </button>
+                    </li>
+                  </ul>
                   <a class="product-card-link" href="#">
                     <img class="product-card-image" src="./images/products/perforator-3.jpg" width="144" height="128"
                       alt="Перфоратор BOSCH BFG 6000" />

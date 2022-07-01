@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Каталог</title>
+
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <header class="page-header">
+      <div class="menu-wrapper">
+        <div class="menu-container">
+          <div class="logo-container">
+            <a class="logo header-logo" href="/">
+              <img class="logo-image" src="./images/icons/logo-small.svg" width="107" height="17"
+                alt="Логотип компании Техномарт" />
+            </a>
+          </div>
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
+            <label class="search-label">
+              <span class="visually-hidden">Поиск</span>
+              <svg class="header-icon" aria-hidden="true" focusable="false" width="17" height="17" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M13.46 12.04 17 15.6 15.59 17l-3.55-3.54a7.5 7.5 0 1 1 1.41-1.41ZM7.5 2a5.5 5.5 0 1 0 .01 11.01A5.5 5.5 0 0 0 7.5 2Z" />
+              </svg>
+              <input class="search" type="search" name="search-field" id="search-field" placeholder="Поиск:" />
+            </label>
+          </form>
+          <ul class="menu-list">
+            <li class="menu-item">
+              <a class="menu-link bookmarks-link" href="#">
+                <svg class="header-icon" aria-hidden="true" focusable="false" width="14" height="16" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M14 15c0 .55-.37.74-.82.43l-5.36-3.77a1.54 1.54 0 0 0-1.64 0L.82 15.43c-.45.31-.82.12-.82-.43V1a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v14Z" />
+                </svg>
+                Закладки: 0</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link cart-link menu-link-active" href="#">
+                <svg class="header-icon" aria-hidden="true" focusable="false" width="15" height="15" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M4.5 15a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM12.5 15a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM15 2H4.07l-.42-2H0v2h2.03l1.99 9H15V9H9.44L15 6.95V2Z" />
+                </svg>
+                Корзина: 10</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link purchase-link" href="#">Оформить заказ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="header-wrapper">
+        <div class="header-container">
+          <p class="company-description">
+            Интернет-магазин<br />строительных материалов<br />и инструментов
+            для ремонта
+          </p>
+
+          <address class="header-contacts">
+            <a class="header-contacts-address-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+            <p class="header-contacts-physical-address">
+              г. Санкт-Петербург, наб. Реки Карповки, 5 лит П
+            </p>
+          </address>
+
+          <section class="user-block">
+            <h2 class="visually-hidden">Блок пользователя</h2>
+            <ul class="user-option-list">
+              <li>
+                <a class="user-block-link user-profile-link" href="#">
+                  <svg class="header-icon user-icon" aria-hidden="true" focusable="false" width=" 20" height="19"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M17.88 14.67c-2.14-.74-4.25-1.67-5.2-2.4-.66-.5-.78-1.61-.52-2.4a5.49 5.49 0 0 0 1.86-4.29c0-2.8-1.8-5.08-4.02-5.08-2.22 0-4.02 2.28-4.02 5.08 0 1.8.75 3.38 1.86 4.28.26.8.14 1.92-.51 2.42-.95.72-3.07 1.65-5.21 2.39C-.03 15.4 0 18.5 0 18.5h20s.02-3.1-2.12-3.83Z" />
+                  </svg>
+                  Равшан Джамшутович
+                </a>
+              </li>
+              <li>
+                <a class="user-block-link user-logout-link" href="#">
+                  <span class="visually-hidden">Выйти</span>
+                  <svg class="header-icon logout-icon" aria-hidden="true" focusable="false" width="20" height="18"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 9 11.12.5v6h-6v5h6v6L20 9Z" />
+                    <path
+                      d="M2.1 14.45V3.55c.02-.38.18-1.06 1.02-1.06h5.02V.5H3.12C.94.5.12 2.31.09 3.53v10.94C.1 15.7.94 17.5 3.12 17.5h5.02v-1.99H3.12c-.84 0-1-.68-1.01-1.06Z" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <ul class="user-menu-list">
+              <li class="user-menu-item">
+                <a class="user-menu-link" href="#">Мои заказы</a>
+              </li>
+              <li class="user-menu-item">
+                <a class="user-menu-link" href="#">Личный кабинет</a>
+              </li>
+            </ul>
+          </section>
+        </div>
+
+        <nav class="navigation">
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a class="navigation-link" href="/">Главная</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Компания</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Каталог</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Новости</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Спецпредложения</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Доставка</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-inner"></main>
+
+    <footer class="page-footer">
+      <div class="page-footer-container">
+        <div class="footer-logo-address-container">
+          <a class="logo footer-logo" href="/">
+            <img class="logo-image" src="./images/icons/logo-large.svg" width="137" height="22"
+              alt="Логотип компании Техномарт" />
+          </a>
+
+          <address class="footer-contacts">
+            <p class="footer-contacts-physical-address">
+              г. Санкт-Петербург, наб. Реки Карповки, 5 лит П
+            </p>
+            <a class="footer-contacts-address-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+          </address>
+        </div>
+
+        <ul class="footer-navigation-list" aria-label="Навигация">
+          <li class="footer-navigation-item">
+            <a class="footer-navigation-link" href="#">Компания</a>
+          </li>
+          <li class="footer-navigation-item">
+            <a class="footer-navigation-link" href="#">Новости</a>
+          </li>
+          <li class="footer-navigation-item">
+            <a class="footer-navigation-link navigation-link-current" href="/catalog.html">Каталог</a>
+          </li>
+          <li class="footer-navigation-item">
+            <a class="footer-navigation-link" href="#">Доставка</a>
+          </li>
+          <li class="footer-navigation-item">
+            <a class="footer-navigation-link" href="#">Контакты</a>
+          </li>
+          <li class="footer-navigation-item">
+            <a class="footer-navigation-link" href="#">Материалы</a>
+          </li>
+          <li class="footer-navigation-item">
+            <a class="footer-navigation-link" href="#">Техника</a>
+          </li>
+          <li class="footer-navigation-item">
+            <a class="footer-navigation-link" href="#">Инструмент</a>
+          </li>
+          <li class="footer-navigation-item">
+            <a class="footer-navigation-link" href="#">Спецпредложения</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-copyright-social-wrapper">
+        <div class="footer-copyright-social-container">
+          <p class="copyright">
+            © 2010–2021 Компания «Техномарт»<br />Все права защищены
+          </p>
+
+          <section class="footer-social">
+            <h2 class="visually-hidden">Техномарт в соцсетях</h2>
+            <ul class="footer-social-list">
+              <li class="footer-social-item">
+                <a class="footer-social-link vkontakte-link" href="#">
+                  <span class="visually-hidden">ВКонтакте</span>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="footer-social-link facebook-link" href="#">
+                  <span class="visually-hidden">Фейсбук</span>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="footer-social-link instagram-link" href="#">
+                  <span class="visually-hidden">Инстаграм</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+
+          <p class="feedback">
+            Обратная связь:<br />
+            <a class="htmlacademy-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </p>
+          <p class="about-text">
+            Разработано —:<br />
+            <a class="htmlacademy-link" href="https://up.htmlacademy.ru/">htmlacademy.ru</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+</html>
