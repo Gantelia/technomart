@@ -12,6 +12,7 @@
     <header class="page-header">
       <div class="menu-wrapper">
         <div class="menu-container">
+          <!-- контейнер для правильного позиционирования логотипа -->
           <div class="logo-container">
             <a class="logo header-logo" href="#">
               <img class="logo-image" src="./images/icons/logo-small.svg" width="107" height="17"
@@ -146,13 +147,21 @@
                 <div class="slider-mask"></div>
                 <h3 class="slider-title">Перфораторы</h3>
                 <p class="slider-text">Настоящие мужские игрушки</p>
-                <img class="slider-image" src="./images/slider-1.jpg" width="620" height="266"
+                <img class="slider-image" src="./images/slider/slider-2.jpg" width="620" height="266"
                   alt="Настоящий мужчина с перфоратором." />
                 <button class="slider-button slider-prev" type="button">
                   <span class="visually-hidden">Предыдущий слайд</span>
+                  <svg class="slider-icon" aria-hidden="true" focusable="false" width="22" height="40" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="m19.92.94 2 2.05L4.91 20.44l17.07 17.5-2 2.05L.9 20.44 19.92.94Z" />
+                  </svg>
                 </button>
                 <button class="slider-button slider-next" type="button">
                   <span class="visually-hidden">Следующий слайд</span>
+                  <svg class="slider-icon" aria-hidden="true" focusable="false" width="22" height="40" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="m19.92.94 2 2.05L4.91 20.44l17.07 17.5-2 2.05L.9 20.44 19.92.94Z" />
+                  </svg>
                 </button>
                 <a class="button open-catalog-button" href="/catalog.html">Открыть каталог</a>
 
@@ -163,7 +172,7 @@
                     </button>
                   </li>
                   <li class="slider-pagination-item">
-                    <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                    <button class="slider-pagination-button slider-pagination-button-active" type="button">
                       <span class="visually-hidden">2 слайд</span>
                     </button>
                   </li>
