@@ -167,66 +167,131 @@
           <div class="catalog-products-container">
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
               <h3 class="catalog-filter-title">Фильтр:</h3>
-              <fieldset class="catalog-filter-group filter-group">
-                <legend class="filter-group-title">Цена:</legend>
+              <fieldset class="catalog-filter-group">
+                <legend class="filter-group-title price-group-title">Цена:</legend>
+
+                <div class="range">
+                  <div class="range-wrapper">
+                    <div class="range-scale">
+                      <div class="range-bar" style="left: 0; width: 158px">
+                        <button class="range-toggle toggle-min" type="button">
+                          <span class="visually-hidden">Изменить минимальную цену.</span>
+                        </button>
+                        <button class="range-toggle toggle-max" type="button">
+                          <span class="visually-hidden">Изменить максимальную цену.</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="range-input-wrapper">
+                    <label class="visually-hidden" for="min-price-field">Минимальная цена</label>
+                    <input class="range-input" type="number" value="0" name="min-price" id="min-price-field">
+                    <label class="visually-hidden" for="max-price-field">Минимальная цена</label>
+                    <input class="range-input" type="number" value="30000" name="max-price" id="max-price-field">
+                  </div>
+                </div>
               </fieldset>
 
-              <fieldset class="catalog-filter-group filter-group">
-                <legend class="filter-group-title">Производители:</legend>
+              <fieldset class="catalog-filter-group producers-filter-group">
+                <legend class="filter-group-title producers-group-title">Производители:</legend>
+
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="Bosch" checked />
-
-                      Bosch
+                      <input class="visually-hidden control-input" type="checkbox" name="Bosch" checked />
+                      <span class="control-mark">
+                        <svg class="checkbox-icon" width="27" height="23" viewBox="0 0 27 23" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M7.285 7.48598L4.456 10.315L12.239 18.098L26.171 4.16598L23.343 1.33698L12.239 12.439L7.285 7.48598Z" />
+                          <path
+                            d="M21 20C21 20.542 20.542 21 20 21H3C2.458 21 2 20.542 2 20V3C2 2.458 2.458 2 3 2H19.908L21.493 0.415C21.041 0.146542 20.5257 0.00329969 20 0H3C1.35 0 0 1.35 0 3V20C0 21.65 1.35 23 3 23H20C21.65 23 23 21.65 23 20V10.171L21 12.171V20Z" />
+                        </svg>
+                      </span>
+                      <span class="control-label">Bosch</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="Interskol" />
-
-                      Интерскол
+                      <input class="visually-hidden control-input" type="checkbox" name="Interskol" />
+                      <span class="control-mark">
+                        <svg class="checkbox-icon" width="27" height="23" viewBox="0 0 27 23" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M7.285 7.48598L4.456 10.315L12.239 18.098L26.171 4.16598L23.343 1.33698L12.239 12.439L7.285 7.48598Z" />
+                          <path
+                            d="M21 20C21 20.542 20.542 21 20 21H3C2.458 21 2 20.542 2 20V3C2 2.458 2.458 2 3 2H19.908L21.493 0.415C21.041 0.146542 20.5257 0.00329969 20 0H3C1.35 0 0 1.35 0 3V20C0 21.65 1.35 23 3 23H20C21.65 23 23 21.65 23 20V10.171L21 12.171V20Z" />
+                        </svg>
+                      </span>
+                      <span class="control-label">Интерскол</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="Makita" checked />
-
-                      Makita
+                      <input class="visually-hidden control-input" type="checkbox" name="Makita" checked />
+                      <span class="control-mark">
+                        <svg class="checkbox-icon" width="27" height="23" viewBox="0 0 27 23" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M7.285 7.48598L4.456 10.315L12.239 18.098L26.171 4.16598L23.343 1.33698L12.239 12.439L7.285 7.48598Z" />
+                          <path
+                            d="M21 20C21 20.542 20.542 21 20 21H3C2.458 21 2 20.542 2 20V3C2 2.458 2.458 2 3 2H19.908L21.493 0.415C21.041 0.146542 20.5257 0.00329969 20 0H3C1.35 0 0 1.35 0 3V20C0 21.65 1.35 23 3 23H20C21.65 23 23 21.65 23 20V10.171L21 12.171V20Z" />
+                        </svg>
+                      </span>
+                      <span class="control-label">Makita</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="Dewalt" />
-
-                      Dewalt
+                      <input class="visually-hidden control-input" type="checkbox" name="Dewalt" />
+                      <span class="control-mark">
+                        <svg class="checkbox-icon" width="27" height="23" viewBox="0 0 27 23" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M7.285 7.48598L4.456 10.315L12.239 18.098L26.171 4.16598L23.343 1.33698L12.239 12.439L7.285 7.48598Z" />
+                          <path
+                            d="M21 20C21 20.542 20.542 21 20 21H3C2.458 21 2 20.542 2 20V3C2 2.458 2.458 2 3 2H19.908L21.493 0.415C21.041 0.146542 20.5257 0.00329969 20 0H3C1.35 0 0 1.35 0 3V20C0 21.65 1.35 23 3 23H20C21.65 23 23 21.65 23 20V10.171L21 12.171V20Z" />
+                        </svg>
+                      </span>
+                      <span class="control-label">Dewalt</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="Hitachi" />
-
-                      Hitachi
+                      <input class="visually-hidden control-input" type="checkbox" name="Hitachi" />
+                      <span class="control-mark">
+                        <svg class="checkbox-icon" width="27" height="23" viewBox="0 0 27 23" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M7.285 7.48598L4.456 10.315L12.239 18.098L26.171 4.16598L23.343 1.33698L12.239 12.439L7.285 7.48598Z" />
+                          <path
+                            d="M21 20C21 20.542 20.542 21 20 21H3C2.458 21 2 20.542 2 20V3C2 2.458 2.458 2 3 2H19.908L21.493 0.415C21.041 0.146542 20.5257 0.00329969 20 0H3C1.35 0 0 1.35 0 3V20C0 21.65 1.35 23 3 23H20C21.65 23 23 21.65 23 20V10.171L21 12.171V20Z" />
+                        </svg>
+                      </span>
+                      <span class="control-label">Hitachi</span>
                     </label>
                   </li>
                 </ul>
               </fieldset>
 
-              <fieldset class="catalog-filter-group filter-group">
-                <legend class="filter-group-title">Питание:</legend>
+              <fieldset class="catalog-filter-group power-type-filter-group">
+                <legend class="filter-group-title power-type-group-title">Питание:</legend>
+
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="power-type" value="Accumulator" checked />
-
-                      Аккумуляторные
+                      <input class="visually-hidden control-input" type="radio" name="power-type" value="Accumulator"
+                        checked />
+                      <span class="control-mark"></span>
+                      <span class="control-label">Аккумуляторные</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="power-type" value="AC-power" />
-
-                      Сетевые
+                      <input class="visually-hidden control-input" type="radio" name="power-type" value="AC-power" />
+                      <span class="control-mark"></span>
+                      <span class="control-label">Сетевые</span>
                     </label>
                   </li>
                 </ul>
@@ -325,6 +390,22 @@
                       <button class="product-button purchase-button" type="button">
                         Купить
                       </button>
+                      <div class="popover-purchase popover-open">
+                        <button class="close-button popover-close-button" type="button">
+                          <span class="visually-hidden">Закрыть</span>
+                        </button>
+                        <div class="popover-content">
+                          <p class="popover-message">Товар добавлен в корзину!</p>
+                          <div class="popover-button-wrapper">
+                            <a class="button order-button" href="blank.html">
+                              Оформить заказ
+                            </a>
+                            <button class="button continue-shoppping-button" type="button">
+                              Продолжить покупки
+                            </button>
+                          </div>
+                        </div>
+                      </div>
                     </li>
                     <li class="card-menu-item">
                       <button class="product-button add-bookmark-button" type="button">

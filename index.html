@@ -500,6 +500,36 @@
         </div>
       </div>
     </footer>
+    <div class="modal-container modal-closed">
+      <div class="modal modal-letter">
+        <button class="close-button modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="visually-hidden">Ваше письмо</h2>
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="form-groups-wrapper">
+              <p class="field-group">
+                <label class="modal-form-label" for="name-field">Ваше имя:</label>
+                <input class="modal-field" type="text" name="name" id="name-field" placeholder="Имя Фамилия" />
+              </p>
+              <p class="field-group">
+                <label class="modal-form-label" for="email-field">Ваш e-mail:</label>
+                <input class="modal-field" type="email" name="email" id="email-field" placeholder="email@example.com" />
+              </p>
+              <p class="field-group">
+                <label class="modal-form-label" for="text-field">Текст письма:</label>
+                <textarea class="modal-field text-field" name="text" rows="4" id="text-field"
+                  placeholder="В свободной форме"></textarea>
+              </p>
+            </div>
+            <div class="form-submit-wrapper">
+              <button class="button modal-form-submit-button" type="submit">Отправить</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 
 </html>
