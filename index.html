@@ -3,8 +3,8 @@
 
   <head>
     <meta charset="utf-8" />
+    <link rel="icon" href="favicon.ico">
     <title>HTML Academy: Техномарт</title>
-
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
@@ -12,7 +12,6 @@
     <header class="page-header">
       <div class="menu-wrapper">
         <div class="menu-container">
-          <!-- контейнер для правильного позиционирования логотипа -->
           <div class="logo-container">
             <a class="logo header-logo" href="#">
               <img class="logo-image" src="./images/icons/logo-small.svg" width="107" height="17"
@@ -142,41 +141,46 @@
               <h3 class="offers-title">Доставка</h3>
               <a class="offers-button" href="blank.html">бесплатно</a>
             </li>
-            <li class="offers-slider">
+            <li class="offers-slider-item">
               <section class="slider">
-                <div class="slider-mask"></div>
-                <h3 class="slider-title">Перфораторы</h3>
-                <p class="slider-text">Настоящие мужские игрушки</p>
-                <img class="slider-image" src="./images/slider/slider-2.jpg" width="620" height="266"
-                  alt="Настоящий мужчина с перфоратором." />
-                <button class="slider-button slider-prev" type="button">
-                  <span class="visually-hidden">Предыдущий слайд</span>
-                  <svg class="slider-icon" aria-hidden="true" focusable="false" width="22" height="40" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="m19.92.94 2 2.05L4.91 20.44l17.07 17.5-2 2.05L.9 20.44 19.92.94Z" />
-                  </svg>
-                </button>
-                <button class="slider-button slider-next" type="button">
-                  <span class="visually-hidden">Следующий слайд</span>
-                  <svg class="slider-icon" aria-hidden="true" focusable="false" width="22" height="40" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="m19.92.94 2 2.05L4.91 20.44l17.07 17.5-2 2.05L.9 20.44 19.92.94Z" />
-                  </svg>
-                </button>
-                <a class="button open-catalog-button" href="/catalog.html">Открыть каталог</a>
+                <div class="slider-wrapper">
+                  <div class="slider-mask">
+                    <h3 class="slider-title">Перфораторы</h3>
+                    <p class="slider-text">Настоящие мужские игрушки</p>
+                  </div>
+                  <img class="slider-image" src="./images/slider/slider-2.jpg" width="620" height="266"
+                    alt="Настоящий мужчина с перфоратором." />
+                  <div class="slider-controls">
+                    <button class="slider-button slider-prev" type="button">
+                      <span class="visually-hidden">Предыдущий слайд</span>
+                      <svg class="slider-icon" aria-hidden="true" focusable="false" width="22" height="40" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="m19.92.94 2 2.05L4.91 20.44l17.07 17.5-2 2.05L.9 20.44 19.92.94Z" />
+                      </svg>
+                    </button>
+                    <button class="slider-button slider-next" type="button">
+                      <span class="visually-hidden">Следующий слайд</span>
+                      <svg class="slider-icon" aria-hidden="true" focusable="false" width="22" height="40" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="m19.92.94 2 2.05L4.91 20.44l17.07 17.5-2 2.05L.9 20.44 19.92.94Z" />
+                      </svg>
+                    </button>
+                  </div>
+                  <a class="button open-catalog-button" href="/catalog.html">Открыть каталог</a>
 
-                <ol class="slider-pagination">
-                  <li class="slider-pagination-item">
-                    <button class="slider-pagination-button" type="button">
-                      <span class="visually-hidden">1 слайд</span>
-                    </button>
-                  </li>
-                  <li class="slider-pagination-item">
-                    <button class="slider-pagination-button slider-pagination-button-active" type="button">
-                      <span class="visually-hidden">2 слайд</span>
-                    </button>
-                  </li>
-                </ol>
+                  <ol class="slider-pagination">
+                    <li class="slider-pagination-item">
+                      <button class="slider-pagination-button" type="button">
+                        <span class="visually-hidden">1 слайд</span>
+                      </button>
+                    </li>
+                    <li class="slider-pagination-item">
+                      <button class="slider-pagination-button slider-pagination-button-active" type="button">
+                        <span class="visually-hidden">2 слайд</span>
+                      </button>
+                    </li>
+                  </ol>
+                </div>
               </section>
             </li>
           </ul>
@@ -192,7 +196,7 @@
 
           <ul class="popular-list">
             <li class="product-card">
-              <ul class="product-card-menu card-menu">
+              <ul class="product-card-menu">
                 <li class="card-menu-item">
                   <button class="product-button purchase-button" type="button">
                     Купить
@@ -214,7 +218,7 @@
             </li>
 
             <li class="product-card product-card-new">
-              <ul class="product-card-menu card-menu">
+              <ul class="product-card-menu">
                 <li class="card-menu-item">
                   <button class="product-button purchase-button" type="button">
                     Купить
@@ -236,7 +240,7 @@
             </li>
 
             <li class="product-card product-card">
-              <ul class="product-card-menu card-menu">
+              <ul class="product-card-menu">
                 <li class="card-menu-item">
                   <button class="product-button purchase-button" type="button">
                     Купить
@@ -258,7 +262,7 @@
             </li>
 
             <li class="product-card product-card-new">
-              <ul class="product-card-menu card-menu">
+              <ul class="product-card-menu">
                 <li class="card-menu-item">
                   <button class="product-button purchase-button" type="button">
                     Купить
@@ -356,10 +360,10 @@
                   Доставка
                 </button>
               </li>
-              <li class="services-item">
+              <li>
                 <button class="services-button" type="button">Гарантия</button>
               </li>
-              <li class="services-item">
+              <li>
                 <button class="services-button" type="button">Кредит</button>
               </li>
             </ul>
@@ -427,7 +431,7 @@
             <p class="footer-contacts-physical-address">
               г. Санкт-Петербург, наб. Реки Карповки, 5 лит П
             </p>
-            <a class="footer-contacts-address-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+            <a href="tel:+78005558628">+7 800 555-86-28</a>
           </address>
         </div>
 
