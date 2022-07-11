@@ -930,10 +930,12 @@ body {
   font-weight: 700;
   color: #FFFFFF;
   border: none;
-  width: 141px;
+  min-width: 141px;
+  max-width: 180px;
   box-sizing: border-box;
   margin-top: auto;
-  padding: 10px 10px;
+  padding: 10px;
+  padding-right: 25px;
   background-color: inherit;
   position: relative;
   cursor: pointer;
@@ -1033,13 +1035,13 @@ body {
 
 .services-list::before {
   bottom: 50%;
-  box-shadow: -5px -2px 5px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: -5px -2px 6px 5px rgba(0, 0, 0, 0.25);
   transform: rotate(3deg);
 }
 
 .services-list::after {
   top: 50%;
-  box-shadow: -5px 2px 5px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: -5px 2px 6px 5px rgba(0, 0, 0, 0.25);
   transform: rotate(-3deg);
 }
 
@@ -1951,7 +1953,7 @@ body {
 }
 
 .catalog-sort-container {
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .catalog-sort {
@@ -2230,8 +2232,9 @@ body {
   flex-wrap: wrap;
 }
 
-.pagination-item:not(:last-child) {
+.pagination-item {
   margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .pagination-link {
