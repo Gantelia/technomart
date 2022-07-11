@@ -313,11 +313,9 @@ img {
 
 .header-container {
   width: 940px;
-  display: grid;
-  grid-template-columns: auto auto auto;
-  gap: 69px;
+  display: flex;
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
   padding-left: 30px;
   padding-top: 46px;
   box-sizing: border-box;
@@ -332,7 +330,7 @@ img {
   vertical-align: middle;
   width: 200px;
   margin: 0;
-  margin-right: 20px;
+  margin-right: 90px;
 }
 
 .header-contacts {
@@ -380,6 +378,7 @@ img {
   width: 281px;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-left: auto;
 }
 
 .user-block-item {
@@ -1510,7 +1509,7 @@ img {
 }
 
 .user-block {
-  width: 300px;
+  width: 299px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1521,7 +1520,7 @@ img {
 .user-option-list {
   padding: 12px;
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
   background-color: #ffffff;
   list-style-type: none;
   display: flex;
@@ -1827,6 +1826,9 @@ img {
 }
 
 .range-input {
+  font-family: "PT Sans", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
   width: 95px;
   height: 38px;
   border: none;
@@ -1836,7 +1838,6 @@ img {
   background-color: #f7f3eC;
   color: #000000;
   box-sizing: border-box;
-  font: inherit;
   border-radius: 3px;
 }
 
@@ -1877,7 +1878,7 @@ img {
   width: 23px;
   height: 23px;
   position: absolute;
-  top: -1px;
+  top: -3px;
   left: 0;
   border: #c5c5c5 solid 2px;
   box-sizing: border-box;
@@ -1910,7 +1911,11 @@ img {
 }
 
 .power-type-group-title {
-  margin-bottom: 19px;
+  margin-bottom: 24px;
+}
+
+.power-type-filter-group {
+  margin-bottom: 9px;
 }
 
 .power-type-filter-group .catalog-filter-item:not(:last-child) {
@@ -1978,7 +1983,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 28px;
+  margin-bottom: 26px;
   box-sizing: border-box;
   border-radius: 2px;
 }
@@ -2092,10 +2097,10 @@ img {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(3, 220px);
   margin-bottom: 48px;
+  display: grid;
+  gap: 19px;
+  grid-template-columns: repeat(3, 220px);
 }
 
 .catalog-product-card {
@@ -2250,7 +2255,7 @@ img {
 }
 
 .pagination-item {
-  margin-right: 10px;
+  margin-right: 9px;
   margin-bottom: 10px;
 }
 
@@ -2258,6 +2263,7 @@ img {
   color: #000000;
   background-color: #ffffff;
   border: #e5e5e5 solid 1px;
+  border-radius: 3px;
   text-decoration: none;
   text-transform: uppercase;
   display: block;
@@ -2274,7 +2280,7 @@ img {
 }
 
 .pagination-next {
-  padding: 10px 32px;
+  padding: 10px 31px 10px 32px;
 }
 
 .pagination-current {
