@@ -1432,7 +1432,7 @@ img {
 
 .footer-social {
   flex-grow: 1;
-  margin-right: 30px;
+  margin-right: 20px;
 }
 
 .footer-social-list {
@@ -1445,15 +1445,16 @@ img {
 }
 
 .footer-social-item {
-  margin-right: 2px;
+  margin-right: 3px;
+  margin-bottom: 3px;
 }
 
 .footer-social-link {
   background-position: center;
   background-repeat: no-repeat;
   background-color: #212a3a;
-  width: 44px;
-  height: 44px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
   display: block;
 }
