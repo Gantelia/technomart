@@ -28,4 +28,4 @@
 
 ### Страница каталога - нижняя часть
 
-<img src="./images/screenshots/catalog-top.jpg" alt="Страница каталога - низ">
+<img src="./images/screenshots/catalog-bottom.jpg" alt="Страница каталога - низ">
